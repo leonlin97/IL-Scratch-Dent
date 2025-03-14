@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,12 +6,13 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             background-color: #f0f4f8;
             margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
         }
         .container {
             background-color: white;
@@ -20,8 +20,8 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
-            width: 80%;
-            max-width: 600px;
+            width: 90%;
+            max-width: 800px; /* Increased max-width for better layout */
         }
         h1 {
             font-size: 24px;
@@ -35,11 +35,13 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
+            table-layout: fixed; /* Ensures consistent column widths */
         }
         th, td {
             border: 1px solid #ddd;
-            padding: 10px;
+            padding: 12px; /* Increased padding for better spacing */
             text-align: left;
+            word-wrap: break-word; /* Allows long text to wrap */
         }
         th {
             background-color: #f9f9f9;
@@ -48,9 +50,21 @@
         td a {
             text-decoration: none;
             color: #007bff;
+            word-break: break-all; /* Breaks long serial numbers */
         }
         td a:hover {
             text-decoration: underline;
+        }
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .container {
+                width: 100%;
+                padding: 10px;
+            }
+            th, td {
+                padding: 8px;
+                font-size: 14px;
+            }
         }
     </style>
 </head>
