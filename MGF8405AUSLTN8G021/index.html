@@ -51,15 +51,15 @@
             margin-bottom: 20px;
         }
         .image-gallery img {
-            width: 200px; /* Identical width for all images */
-            height: 200px; /* Identical height for all images */
+            width: 300px; /* Increased width to make images larger */
+            height: 400px; /* Increased height to maintain 3:4 ratio (300 * 4/3 = 400) */
             object-fit: cover; /* Ensures images maintain aspect ratio within the size */
             border-radius: 5px;
         }
-        /* Desktop: 3 images per row */
+        /* Desktop: 2 images per row */
         @media (min-width: 601px) {
             .image-gallery img {
-                flex: 0 0 calc(33.33% - 20px); /* 33.33% width minus gap adjustment */
+                flex: 0 0 calc(50% - 20px); /* 50% width minus gap adjustment for 2 images per row */
             }
         }
         /* Mobile: 1 image per row */
@@ -80,9 +80,9 @@
         </div>
         <div class="image-gallery">
             <img src="IMG_0325.jpeg" alt="Image 1 of MGF8405AUSLTN8G021">
-            <img src="image2.jpg" alt="Image 2 of MGF8405AUSLTN8G021">
-            <img src="image3.jpg" alt="Image 3 of MGF8405AUSLTN8G021">
-            <img src="image4.jpg" alt="Image 4 of MGF8405AUSLTN8G021"> <!-- Optional extra image -->
+            <img src="IMG_0326.jpeg" alt="Image 2 of MGF8405AUSLTN8G021">
+            <img src="IMG_0327.jpeg" alt="Image 3 of MGF8405AUSLTN8G021">
+            <img src="IMG_0328.jpeg" alt="Image 4 of MGF8405AUSLTN8G021"> <!-- Optional extra image -->
         </div>
     </div>
 </body>
