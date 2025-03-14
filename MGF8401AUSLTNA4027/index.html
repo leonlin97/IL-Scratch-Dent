@@ -1,1 +1,90 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGF8401AUSLTNA4027</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 800px;
+            min-width: 300px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        p.subtitle {
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-style: italic;
+        }
+        .description {
+            text-align: left;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Space between images */
+            margin-bottom: 20px;
+        }
+        .image-gallery img {
+            width: 300px; /* Increased width to make images larger */
+            height: 400px; /* Increased height to maintain 3:4 ratio (300 * 4/3 = 400) */
+            object-fit: cover; /* Ensures images maintain aspect ratio within the size */
+            border-radius: 5px;
+        }
+        /* Desktop: 2 images per row */
+        @media (min-width: 601px) {
+            .image-gallery img {
+                flex: 0 0 calc(50% - 20px); /* 50% width minus gap adjustment for 2 images per row */
+            }
+        }
+        /* Mobile: 1 image per row */
+        @media (max-width: 600px) {
+            .image-gallery img {
+                flex: 0 0 100%; /* Full width on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MGF8401AUSLTNA4027</h1>
+        <p class="subtitle">Item Number: MGF8401GRL</p>
+        <p class="subtitle">Discount Category: <strong class="highlight">Damage A</strong></p>
+        <div class="description">
+            <h3>Damage Description</h3>
+            <p>Small dent on left upper part and right bottom side.</p>
+        </div>
+        <div class="image-gallery">
+            <img src="IMG_0329.jpeg" alt="Image 1 of MBF8001AUS1TN9C032">
+            <img src="IMG_0330.jpeg" alt="Image 2 of MBF8001AUS1TN9C032">
+            <img src="IMG_0331.jpeg" alt="Image 3 of MBF8001AUS1TN9C032">
+            <img src="IMG_0332.jpeg" alt="Image 4 of MBF8001AUS1TN9C032"> <!-- Optional extra image -->
+        </div>
+    </div>
+</body>
+</html>
